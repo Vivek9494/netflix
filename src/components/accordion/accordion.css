@@ -1,0 +1,57 @@
+.Accordion_container{display: flex;border-bottom: 8px solid #222;}
+.Accordion_title{
+    font-size: 50px;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: white;
+    text-align: center;
+}
+.Accordion_header{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 1px;
+    font-size: 25px;
+    font-weight: normal;
+    background: #303030;
+    padding: 0.8em 1.2em;
+    user-select: none;
+    align-items: center;
+}
+.Accordion_img {filter: brightness(0) invert(1);width: 24px;}
+
+.Accordion_item{
+    color: white;
+    margin-bottom: 10px;
+    max-width: 760px;
+}
+.Accordion_item &:first-of-type {
+    margin-top: 3em;
+}
+
+.Accordion_body{
+    max-height: 1200px;
+    transition: max-height 0.25s cubic-beizer(0.5, 0, 0.1, 1);
+    font-size: 22px;
+    font-weight: normal;
+    line-height: normal;
+    background: #303030;
+    padding: 0.8em 2.2em;
+    white-space: pre-wrap;
+    user-select: none;
+}
+
+.Accordion_inner{
+    display: flex;
+    padding: 70px 30px;
+    flex-direction: column;
+    max-width: 750px;
+    margin: auto;
+}
+@media (max-width: 600px) {
+    .Accordion_img{width: 16px;}
+    .Accordion_header{font-size: 19px;}
+    .Accordion_title{font-size: 30px;}
+    .Accordion_body{font-size: 18px;line-height: 22px;}
+}

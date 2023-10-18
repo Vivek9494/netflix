@@ -1,11 +1,13 @@
 import React from 'react'
 import HeaderContainer from '../containers/headerContainer'
+import JumbotronContainer from '../containers/jumbotronContainer'
+import FaqContainer from '../containers/faqContainer'
 import Feature from '../components/features/Feature'
 import OptForm from '../components/optForm/OptForm'
-import Accordion from '../components/accordion/accordion'
 
 export default function home() {
   return (
+    <>
       <HeaderContainer>
         <Feature>
           <Feature.Title>Unlimited films, TV, </Feature.Title>
@@ -19,10 +21,9 @@ export default function home() {
             <OptForm.Button>TRY IT NOW</OptForm.Button>
           </OptForm>
         </Feature>
-
-        <Accordion>
-          
-        </Accordion>
       </HeaderContainer>
+      <JumbotronContainer></JumbotronContainer>
+      <FaqContainer></FaqContainer>
+      </>
   )
 }
