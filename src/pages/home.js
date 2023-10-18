@@ -1,6 +1,7 @@
 import React from 'react'
 import HeaderContainer from '../containers/headerContainer'
 import JumbotronContainer from '../containers/jumbotronContainer'
+import FooterContainer from '../containers/footerContainer'
 import FaqContainer from '../containers/faqContainer'
 import Feature from '../components/features/Feature'
 import OptForm from '../components/optForm/OptForm'
@@ -21,7 +22,7 @@ export default function home() {
           </OptForm>
         </Feature>
       </HeaderContainer>
-      <JumbotronContainer></JumbotronContainer>
+      <JumbotronContainer/>
       <FaqContainer>
           <OptForm>
             <OptForm.Input placeholder="Email address" />
@@ -29,6 +30,7 @@ export default function home() {
             <OptForm.Text>Ready to watch? Enter your email to create or restart your membership.</OptForm.Text>
           </OptForm>
       </FaqContainer>
+      <FooterContainer></FooterContainer>
       </>
   )
 }
