@@ -17,13 +17,18 @@ export default function home() {
             <OptForm.Text>Ready to watch? Enter your email to create or restart your membership.</OptForm.Text>
             <OptForm.Break />
             <OptForm.Input placeholder="Email address" />
-            <OptForm.Break />
             <OptForm.Button>TRY IT NOW</OptForm.Button>
           </OptForm>
         </Feature>
       </HeaderContainer>
       <JumbotronContainer></JumbotronContainer>
-      <FaqContainer></FaqContainer>
+      <FaqContainer>
+          <OptForm>
+            <OptForm.Input placeholder="Email address" />
+            <OptForm.Button>TRY IT NOW</OptForm.Button>
+            <OptForm.Text>Ready to watch? Enter your email to create or restart your membership.</OptForm.Text>
+          </OptForm>
+      </FaqContainer>
       </>
   )
 }

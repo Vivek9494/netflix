@@ -2,7 +2,7 @@ import React from 'react'
 import faqJson from '../fixtures/faq.json'
 import Accordion from '../components/accordion/Accordion'
 
-export default function faqContainer() {
+export default function faqContainer({children}) {
   return (
     <Accordion>
         <Accordion.Title>Frequently Asked Questions</Accordion.Title>
@@ -12,7 +12,7 @@ export default function faqContainer() {
                 <Accordion.Body>{item.body}</Accordion.Body>
             </Accordion.Item>
         ))}
-        
+        {children}
     </Accordion>
   )
 }
