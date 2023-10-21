@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link as ReactRouterLink} from 'react-router-dom';
-import { Background, ButtonLink, Logo, Container } from './styles/style';
+import { Background, NavLinkButton, Logo, Container } from './styles/style';
 
 export default function Header({children, ...restProps}) {
   return <Background {...restProps}>{children}</Background>;
@@ -14,5 +14,5 @@ Header.Logo = function HeaderLogo({ to, ...restProps }) {
 };
 
 Header.ButtonLink = function HeaderButtonLink({children, ...restProps}){
-  return <ButtonLink { ...restProps}>{children}</ButtonLink>;
+  return <NavLinkButton { ...restProps}>{children}</NavLinkButton>;
 };

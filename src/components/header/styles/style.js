@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link as ReactRouterLink } from 'react-router-dom';
+import { NavLink, Link as ReactRouterLink } from 'react-router-dom';
 
 export const Background = styled.div`
     display: flex;
@@ -189,7 +189,7 @@ export const Logo = styled.img`
     }
 `;
 
-export const ButtonLink = styled(ReactRouterLink)`
+export const NavLinkButton = styled(NavLink)`
     display: block;
     background-color: #e50914;
     width: 84px;
