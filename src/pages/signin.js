@@ -20,7 +20,7 @@ export default function Signin() {
     .then((userCredentials) => {
       console.log(userCredentials);
     }).catch((error) => {
-      console.log(error);
+      SetError(error);
     })
   }
   return (
@@ -29,6 +29,7 @@ export default function Signin() {
         <Form>
           <Form.Title>Sign In</Form.Title>
           <Form.Base onSubmit={handleSubmit} method="POST">
+            {Error ? <Form.Text>Error</Form.Text> : null}
             <Form.Input placeholder="Email address" value={email} onChange={({ target }) => SetEmail(target.value)}></Form.Input>
             <Form.Input type="password" placeholder="Password" value={password} onChange={({target}) => SetPassword(target.value)}></Form.Input>
             <Form.Button type="submit">SignIn</Form.Button>
