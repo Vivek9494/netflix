@@ -1,3 +1,5 @@
+![image](https://github.com/Vivek9494/netflix/assets/63170025/43ea93fc-fde3-4a10-8376-2d2451964ef5)
+
 ## Available Scripts
 
 In the project directory, you can run:
