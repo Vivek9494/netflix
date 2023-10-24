@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    max-width: calc(100% - 6rem);
     display: flex;
     flex-direction: column;
     border-bottom: 8px solid #222;
     text-align: center;
-    padding: 165px 45px;
+    margin: 165px 160px;
 `;
 
 export const Title = styled.h1`
     color: white;
-    max-width: 640px;
-    font-size: 50px;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 900;
     margin: auto;
 
     @media (max-width: 600px) {
