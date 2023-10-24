@@ -2,8 +2,8 @@ import React from 'react'
 import {Link as ReactRouterLink} from 'react-router-dom';
 import { Background, NavLinkButton, Logo, Container } from './styles/style';
 
-export default function Header({children, ...restProps}) {
-  return <Background {...restProps}>{children}</Background>;
+export default function Header({user, children, ...restProps}) {
+  return <Background src={user} {...restProps}>{children}</Background>;
 }
 
 Header.Frame = function HeaderFrame({ children, ...restProps }) {

@@ -16,20 +16,22 @@ export const Background = styled.div`
 export const Group = styled.div`
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    -webkit-box-pack: justify;    
 `;
 
 export const Container = styled.div`
+    height: 30px;
+    padding: 18px 0;
+    -webkit-box-pack: justify;
     display: flex;
     margin: 0 56px;
-    height: 30px;
     width: 90%;
-    padding: 18px 0;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
+    transition: background-color .4s;
+    align-items: center;
     z-index: 1;
     transition-timing-function: ease-in;
-    transition: all 0.4s;
 
     a {
         display: flex;
@@ -41,7 +43,7 @@ export const Container = styled.div`
 `;
 
 export const Picture = styled.button`
-    background: url(${({ src }) => src});
+    background: url(${({ src }) => src ? `../images/icons/Netflix-avatar.png` : `../images/icons/Netflix-avatar.png`});
     background-size: contain;
     border: 0;
     width: 32px;
@@ -181,7 +183,6 @@ export const Logo = styled.img`
     height: 32px;
     width: 108px;
     margin-right: 40px;
-    padding-top: 20px;
 
     @media (min-width: 1449px) {
         height: 45px;
@@ -236,3 +237,28 @@ export const FeatureCallOut = styled.h2`
     margin: 0;
     margin-bottom: 20px;
 `;
+
+export const ListGroup = styled.ul`
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0!important;
+    font-size: 14px;
+`;
+
+export const List = styled.li`
+    margin-left: 20px;
+    list-style-type: none;
+`;
+
+export const ListLink = styled.p`
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+`
